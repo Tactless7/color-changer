@@ -9,21 +9,26 @@
 
 	<div id="rgbForm">
 		<div id="colorReferences">
-			<span id="rgba"></span>
+			<span id="rgba" class="rgbValues"></span>
 			<span id="hexadecimal"></span>
 		</div>
 		<form>
 			<div>
-				0 <input type="range" min="0" max="255" id="redInput" oninput=""> 255
+				0 <input type="range" min="0" max="255" id="redInput" value="255"> 255 <span id="redRgb" class="rgbValues"></span>
 			</div>
 			<div>
-				0 <input type="range" min="0" max="255" id="greenInput" oninput=""> 255
+				0 <input type="range" min="0" max="255" id="greenInput" value="255"> 255 <span id="greenRgb" class="rgbValues"></span>
 			</div>
 			<div>
-				0 <input type="range" min="0" max="255" id="blueInput" oninput=""> 255
+				0 <input type="range" min="0" max="255" id="blueInput" value="255"> 255 <span id="blueRgb" class="rgbValues"></span>
+			</div>
+			<div>
+				0 <input type="range" min="0" max="100" id="alphaInput" value="100"> 1 <span id="alpha" class="rgbValues"></span>
 			</div>
 		</form>
 	</div>
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
