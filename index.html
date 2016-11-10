@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Changer</title>
+</head>
+<body>
+	<h1>Color Changer - Which color do you want ?</h1>
+
+	<div id="rgbForm">
+		<div id="colorReferences">
+			<span id="rgba"></span>
+			<span id="hexadecimal"></span>
+		</div>
+		<form>
+			<div>
+				0 <input type="range" min="0" max="255" id="redInput" oninput=""> 255
+			</div>
+			<div>
+				0 <input type="range" min="0" max="255" id="greenInput" oninput=""> 255
+			</div>
+			<div>
+				0 <input type="range" min="0" max="255" id="blueInput" oninput=""> 255
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
